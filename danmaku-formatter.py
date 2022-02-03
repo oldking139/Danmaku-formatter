@@ -24,7 +24,7 @@ with open(input_file_path, 'w', encoding='utf-8') as w:
         if '<sc ts' not in contents:
           w.write(contents)
 
-#去除行首空格
+#去除行首空格，处理多行合一
 with open(input_file_path,'r',encoding='utf-8') as r:
     lines=r.readlines()
 with open(input_file_path, 'w', encoding='utf-8') as w:
