@@ -30,11 +30,5 @@ with open(input_file_path,'r',encoding='utf-8') as r:
 with open(input_file_path, 'w', encoding='utf-8') as w:
     for contents in lines:
         contents = contents.replace('  <','<')
-        w.write(contents)
-#多行合一
-with open(input_file_path,'r',encoding='utf-8') as r:
-    lines=r.readlines()
-with open(input_file_path, 'w', encoding='utf-8') as w:
-    for contents in lines:
-        contents = contents.replace('\n','')
+        contents = contents.replace('\n', '')
         w.write(contents)
