@@ -1,5 +1,5 @@
-import os
 input_file_path = str(input())
+input_file_path = input_file_path.replace('"','')
 print(input_file_path)
 
 #删除礼物，舰长以及sc信息
